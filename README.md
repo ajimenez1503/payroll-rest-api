@@ -21,5 +21,9 @@ curl -v localhost:8080/employees/3
 curl -v localhost:8080/employees/1 | json_pp
 curl -v localhost:8080/employees | json_pp
 
+curl -v -X POST localhost:8080/employees -H 'Content-Type:application/json' -d '{"name": "Samwise Gamgee", "role": "gardener"}' | json_pp
+curl -v -X POST localhost:8080/employees -H 'Content-Type:application/json' -d '{"firstName": "Samwise2", "lastName": "Gamgee2", "role": "gardener"}' | json_pp
+curl -v -X PUT localhost:8080/employees/3 -H 'Content-Type:application/json' -d '{"name": "Samwise Gamgee", "role": "ring bearer"}' | json_pp
+
 
 ```
