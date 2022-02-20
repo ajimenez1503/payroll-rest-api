@@ -28,4 +28,6 @@ curl -v -X PUT localhost:8080/employees/3 -H 'Content-Type:application/json' -d 
 curl -v http://localhost:8080/orders | json_pp
 curl -v -X DELETE http://localhost:8080/orders/4/cancel | json_pp
 curl -v -X PUT localhost:8080/orders/4/complete | json_pp
+curl -v -X GET localhost:8080/  | json_pp
+
 ```
